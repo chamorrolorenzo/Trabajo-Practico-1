@@ -1,8 +1,11 @@
 
 *{
   margin: 0px;
-  padding: 0px;
+  padding: 1px;
   font-size: 12px;
+}
+body{
+  min-width: 100vh;
 }
 
 .sidebar{
@@ -39,6 +42,7 @@
  .status-green::before{
   content: "";
   background-color: rgb(27, 221, 27);
+  display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 60%;
@@ -48,9 +52,16 @@
   .status-red::before{
   content: "";
   background-color: red;
+  display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 60%;
   margin-right: 5px;
   }
-  
+/*se agrega chatting*/
+.contact-chatting{
+  background-color:rgb(218, 230, 236) ;
+  border-radius: 10px;
+}
+
+/*segunda parte*/
