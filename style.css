@@ -33,7 +33,7 @@ body{
   li{
     display: flex;
     align-items: center;
-    white-space: nowrap;
+    /* white-space: nowrap; se deja comentado para ver como se comporte*/ 
     gap: 10px;
     max-width: 80%;
     margin-bottom: 10px;
@@ -65,3 +65,17 @@ body{
 }
 
 /*segunda parte*/
+
+main{
+  width: 100%;
+}
+
+.chat-hesder{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+
