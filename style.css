@@ -1,29 +1,27 @@
 
 *{
-  margin: 0px;
+  margin-top: 10px;
   padding: 0px;
-  font-size: 12px;
- }
+}
 body{
   min-width: 100vh;
 }
 
 .sidebar{
   min-width: 20%;
-  margin-left: 10%;
   gap: 20px;
 }
 
 .search{
   width: 80%;
   padding: 10px;
-  border-radius: 5px;/*se engroso el borde*/
-  margin-top: 30px;
-  border: 0.5px solid #ccc;/*le pedimos que sea mas fino*/
+  border-radius: 5px;
+  border: 0.5px solid #ccc;
   }
 
   section{
     display: flex;
+    font-size: 12px;
   }
 
   img{
@@ -33,7 +31,6 @@ body{
   li{
     display: flex;
     align-items: center;
-    /* white-space: nowrap; se deja comentado para ver como se comporte*/ 
     gap: 10px;
     max-width: 80%;
     margin-bottom: 10px;
@@ -48,7 +45,7 @@ body{
   border-radius: 60%;
   margin-right: 5px;
   }
-  /*se usa lo mismo cambia el color*/
+  
   .status-red::before{
   content: "";
   background-color: red;
@@ -58,21 +55,22 @@ body{
   border-radius: 60%;
   margin-right: 5px;
   }
-/*se agrega chatting*/
+
 .contact-chatting{
   background-color:rgb(218, 230, 236) ;
   border-radius: 10px;
 }
 
-/*segunda parte*/
+
 
 main{
   width: 100%;
   border: 1px solid;
+  box-sizing: border-box;
   }
 
   .header{
-    border-bottom: 1px solid;
+    
   }
 
 .chat-header{
@@ -88,12 +86,12 @@ main{
   gap: 15px;
 }
 
-/* botonos*/
-.chat-accions{
+
+.chat-actions{
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
   margin-right: 10px;
   border-bottom: 1px solid;
@@ -101,7 +99,7 @@ main{
   }
 
   .chat-actions button{
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .chat-messages{
@@ -111,6 +109,14 @@ main{
     gap: 20px;
     font-size: 14px;
     background-color: bisque;
+  }
+
+  .message-sent{
+    background-color: chartreuse;
+    align-self: flex-end;
+    white-space: nowrap;
+    border: 5px;
+    min-width: 350px;
   }
 
   .timestamp{
