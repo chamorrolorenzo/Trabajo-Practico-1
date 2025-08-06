@@ -80,6 +80,7 @@ main{
   align-items: flex-start;
  margin-left: 10px;
  width: 100%;
+ background-color: aqua;
 }
 
 .name{
