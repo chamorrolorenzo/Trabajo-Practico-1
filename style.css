@@ -70,15 +70,15 @@ main{
   }
 
   .header{
-    
+    border-bottom: 1px solid black;
   }
 
 .chat-header{
   display: flex;
   align-items: flex-start;
- margin-left: 10px;
- width: 100%;
+  width: 100%;
  background-color: aqua;
+ border-bottom: 1px solid black;
 }
 
 .name{
@@ -111,6 +111,10 @@ main{
     background-color: bisque;
   }
 
+  p{
+    margin-left: 10px;
+  }
+
   .message-sent{
     background-color: chartreuse;
     align-self: flex-end;
@@ -131,13 +135,29 @@ main{
 
   .message-received2{
     background-color: #f0eeee;
-    max-width: 250px;
+    max-width: 450px;
     border-radius: 5px;
   }
 
   .chat-footer{
     display: flex;
-    
+    align-items: center;
+    max-height: 45px;    
   }
+
+  .chat-footer input{
+    width: 100%;
+    padding: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #888;
+  }
+
+  .chat-footer button{
+    padding: 10px;
+    border: none;
+    background-color: white;
+  }
+
 
 
