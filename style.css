@@ -61,6 +61,7 @@ body{
 .contact-chatting{
   background-color:rgb(218, 230, 236) ;
   border-radius: 10px;
+ 
 }
 
 
@@ -69,6 +70,7 @@ main{
   width: 80%;
   border: 1px solid #888;
   background-color: aqua;
+  
 }
 
   
@@ -78,6 +80,7 @@ main{
   width: 100%;
   margin-left: 10px;
   gap: 10px;
+  
 }
 
 .name{
@@ -111,6 +114,7 @@ main{
     margin-top: 0;
     border-bottom: 1px solid #888;
     border-top: 1px solid #888;
+     margin-bottom: 30px;
   }
 
   p{
@@ -165,8 +169,32 @@ main{
   .chat-footer button{
     padding: 10px;
     border: none;
+    font-size: 28px;
     background-color: white;
   }
+
+
+ @media (max-width: 480px) {
+    .sidebar{
+      display: none;
+    }
+    main{
+      width: 100%;
+      border: none;
+    }
+    .chat-actions{
+      gap: 1px;
+    }
+    .chat-messages{
+      font-size: 14px;
+      gap: 10px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .chat-footer{
+      width: 100%;
+    }
+}
 
 
 
