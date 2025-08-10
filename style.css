@@ -86,6 +86,10 @@ main{
   margin-right: 10px;
 }
 
+.btn-a{
+  margin-top: 15px;
+}
+
 .chat-actions button{
     font-size: 24px;
     border: none;
