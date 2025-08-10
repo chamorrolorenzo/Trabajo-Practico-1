@@ -8,7 +8,7 @@ body{
 }
 
 .sidebar{
-  min-height: 20%;
+  min-width: 20%;
   gap: 20px;
 }
 
@@ -19,27 +19,27 @@ body{
   border: 0.5px solid #ccc;
   }
 
-  section{
+section{
     display: flex;
     font-size: 12px;
-  }
+}
 
-  img{
+img{
     width: 50px;
     margin-bottom: 10px;
+}
 
-  }
-
-  li{
+ li{
     display: flex;
     align-items: center;
     gap: 10px;
     max-width: 80%;
     margin-bottom: 10px;
     white-space: nowrap;
- }
+}
 
- .status-green::before{
+.status-green::before,
+ .status-red::before{
   content: "";
   background-color: rgb(27, 221, 27);
   display: inline-block;
@@ -49,22 +49,14 @@ body{
   margin-right: 5px;
   }
   
-  .status-red::before{
-  content: "";
+.status-red::before{
   background-color: red;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 60%;
-  margin-right: 5px;
-  }
+ }
 
 .contact-chatting{
   background-color:rgb(218, 230, 236) ;
   border-radius: 10px;
- }
-
-
+}
 
 main{
   width: 80%;
@@ -110,11 +102,11 @@ main{
     background-color: #faf8f8;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
-  }
+ }
 
-  p{
+ p{
     margin-left: 10px;
-  }
+ }
 
 .message-sent{
     background-color: rgb(229, 245, 245);
@@ -122,25 +114,24 @@ main{
     min-width: 350px;
     margin-right: 10px;
     border-radius: 5px;
-  }
+}
 
-  .timestamp{
+.timestamp{
     font-size: 10px;
-  }
+}
 
-.message-received1{
+.message-received1,.message-received2
+{
     background-color: #f0eeee;
     max-width: 250px;
     border-radius: 5px;
     margin-left: 10px;
   }
 
-  .message-received2{
-    background-color: #f0eeee;
-    max-width: 450px;
-    border-radius: 5px;
-    margin-left: 10px;
-  }
+.message-received2{
+   max-width: 450px;
+}
+  
 
 .chat-footer{
   box-sizing: border-box;
