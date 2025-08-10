@@ -4,11 +4,11 @@
   padding: 0px;
 }
 body{
-  min-width: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar{
-  min-width: 20%;
+  min-height: 20%;
   gap: 20px;
 }
 
